@@ -224,7 +224,7 @@ class Parameter extends AbstractAnnotation
                     $valid = false;
                 }
             } else {
-                $validTypes = ['string', 'number', 'integer', 'boolean', 'array', 'file'];
+                $validTypes = ['string', 'number', 'integer', 'boolean', 'array', 'file', 'any'];
                 if ($this->type === null) {
                     Logger::notice($this->identity() . '->type is required when ' . $this->_identity([]) . '->in == "' . $this->in . '" in ' . $this->_context);
                     $valid = false;
